@@ -29,7 +29,7 @@ def duplicate(lst):
     if not lst:
         return []
     else:
-        return [car(lst), car(lst)].extend(duplicate(cdr(lst)))   
+        return [car(lst), car(lst)] + duplicate(cdr(lst))   
 
 #    Tests 
 print "Testing sumList(lst)" 
